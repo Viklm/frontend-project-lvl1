@@ -4,20 +4,21 @@ import hello from './cli.js';
 const launchGame = () => {
   const name = hello();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const numbers = [15, 6, 7];
-  const answers = ['no', 'yes', 'no'];
   for (let question = 0; question <= 2; question += 1) {
-    const evenNumOrNot = readlineSync.question(`Question: ${numbers[question]} `);
-    console.log(`Your answer: ${evenNumOrNot}`);
-    if (evenNumOrNot === answers[question]) {
+    const number = Math.round(Math.random() * 100);
+    console.log(`Question: ${number}`);
+    const evenNumOrNot = readlineSync.question('Your answer: ');
+    if ((number % 2 === 0 && evenNumOrNot === 'yes') || (number % 2 === 1 && evenNumOrNot === 'no')) {
       console.log('Correct!');
-    } else {
-      console.log(`'${evenNumOrNot}' is wrong answer ;(. Correct answer was '${answers[question]}'.`);
+    } if (number % 2 === 0 && evenNumOrNot !== 'yes') {
+      console.log(`'${evenNumOrNot}' is wrong answer ;(. Correct answer was 'yes'.`);
+      return console.log(`Let's try again, ${name}!`);
+    } if (number % 2 === 1 && evenNumOrNot !== 'no') {
+      console.log(`'${evenNumOrNot}' is wrong answer ;(. Correct answer was 'no'.`);
       return console.log(`Let's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}!`);
-  return '';
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default launchGame;
