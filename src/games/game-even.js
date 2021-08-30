@@ -11,6 +11,6 @@ const getGameData = () => {
 };
 
 const launchGame = () => {
-  game(description, getGameData)
+  game(description, getGameData);
 };
 export default launchGame;
