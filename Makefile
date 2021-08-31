@@ -8,6 +8,8 @@ brain-calc: #Запуск игры на выражения
 	node bin/brain-calc.js
 brain-gcd: #Запуск игры на нахождения НОД
 	node bin/brain-gcd.js
+brain-progression: #Запуск игры на арифметическую прогрессию
+	node bin/brain-progression.js
 publish:
 	npm publish --dry-run
 lint:
