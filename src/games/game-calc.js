@@ -16,7 +16,7 @@ const calculation = (num1, num2, operator) => {
 };
 
 const getGameData = () => {
-  const operators = ['*', '-', '+'];
+  const operators = ['-', '*', '+'];
   const numOne = randomOfNum(20);
   const numTwo = randomOfNum(20);
   const operator = operators[randomOfNum(2)];
