@@ -13,5 +13,7 @@
 ### Игры/Games.
 1. Игра: "Проверка на чётность". Команда brain-even. (Game: "Parity Check". Command brain-even.)
 2. Игра: "Калькулятор". Команда brain-calc.(Game:"Calculator". Command brain-calc.)
+3. Игра "НОД". НОД - Наибольший Общий Делитель. Команда brain-gcd. (Game: "GCD".GCD - Greatest Common Divisor. Command brain-gcd.)
 <a href="https://asciinema.org/a/428467" target="_blank"><img src="https://asciinema.org/a/428467.svg" /></a> brain-even
 <a href="https://asciinema.org/a/433018" target="_blank"><img src="https://asciinema.org/a/433018.svg" /></a> brain-calc
+<a href="https://asciinema.org/a/433206" target="_blank"><img src="https://asciinema.org/a/433206.svg" /></a> brain-gcd
