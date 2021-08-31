@@ -15,7 +15,9 @@
 2. Игра: "Калькулятор". Команда brain-calc.(Game:"Calculator". Command brain-calc.)
 3. Игра "НОД". НОД - Наибольший Общий Делитель. Команда brain-gcd. (Game: "GCD".GCD - Greatest Common Divisor. Command brain-gcd.)
 4. Игра "Арифметическая прогрессия". Команда brain-progression. (Game: "Arithmetic progression". Command brain-progression.)
+5. Игра "Простое ли число?". Команда brain-prime. (Game: "Is it a prime number?". Command brain-prime.)
 <a href="https://asciinema.org/a/428467" target="_blank"><img src="https://asciinema.org/a/428467.svg" /></a> brain-even
 <a href="https://asciinema.org/a/433018" target="_blank"><img src="https://asciinema.org/a/433018.svg" /></a> brain-calc
 <a href="https://asciinema.org/a/433206" target="_blank"><img src="https://asciinema.org/a/433206.svg" /></a> brain-gcd
 <a href="https://asciinema.org/a/433233" target="_blank"><img src="https://asciinema.org/a/433233.svg" /></a> brain-progression
+<a href="https://asciinema.org/a/433249" target="_blank"><img src="https://asciinema.org/a/433249.svg" /></a> brain-prime
