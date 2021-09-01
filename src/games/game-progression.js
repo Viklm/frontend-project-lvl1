@@ -1,35 +1,33 @@
-import game from '../index.js';
+import buildGameLogic from '../index.js';
 import randomOfNum from '../randomOfNum.js';
 
 const description = 'What number is missing in the progression?';
 
-const getMass = () => {
+const getArithmeticProgression = (firstElement, step, length) => {
   const result = [];
-  result.push(randomOfNum(50));
-  const step = randomOfNum(10);
-  for (let i = 0; i < 9; i += 1) {
-    let item = result[i];
-    item += step;
-    result.push(item);
+  for (let i = 0; i < length; i += 1) {
+    result.push(firstElement + step * i);
   }
   return result;
 };
 
-const getCorrectAnswer = (mas) => {
-  const index = randomOfNum(9);
-  const item = mas[index];
-  mas[index] = '..';
-  return item;
+const letHideTheElement = (arr, index) => {
+  arr[index] = '..';
+  return arr.join(' ');
 };
 
 const getGameData = () => {
-  const mas = getMass();
-  const question = mas;
-  const correctAnswer = String(getCorrectAnswer(mas));
+  const indexOfHiddenElement = randomOfNum(0, 9);
+  const lengthOfProgression = randomOfNum(10, 15);
+  const firstElement = randomOfNum(0, 50);
+  const step = randomOfNum(1, 10);
+  const progression = getArithmeticProgression(firstElement, step, lengthOfProgression);
+  const correctAnswer = String(progression[indexOfHiddenElement]);
+  const question = letHideTheElement(progression, indexOfHiddenElement);
   return [question, correctAnswer];
 };
 
 const launchGame = () => {
-  game(description, getGameData);
+  buildGameLogic(description, getGameData);
 };
 export default launchGame;

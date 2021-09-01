@@ -1,8 +1,8 @@
-import game from '../index.js';
+import buildGameLogic from '../index.js';
 import randomOfNum from '../randomOfNum.js';
 
 const description = 'What is the result of the expression?';
-const calculation = (num1, num2, operator) => {
+const getCalculated = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return (num1 + num2);
@@ -17,15 +17,15 @@ const calculation = (num1, num2, operator) => {
 
 const getGameData = () => {
   const operators = ['-', '*', '+'];
-  const numOne = randomOfNum(20);
-  const numTwo = randomOfNum(20);
-  const operator = operators[randomOfNum(2)];
-  const correctAnswer = String(calculation(numOne, numTwo, operator));
+  const numOne = randomOfNum(0, 30);
+  const numTwo = randomOfNum(0, 30);
+  const operator = operators[randomOfNum(0, 2)];
+  const correctAnswer = String(getCalculated(numOne, numTwo, operator));
   const question = `${numOne} ${operator} ${numTwo}`;
   return [question, correctAnswer];
 };
 
 const launchGame = () => {
-  game(description, getGameData);
+  buildGameLogic(description, getGameData);
 };
 export default launchGame;

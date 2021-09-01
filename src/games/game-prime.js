@@ -1,4 +1,4 @@
-import game from '../index.js';
+import buildGameLogic from '../index.js';
 import randomOfNum from '../randomOfNum.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -16,12 +16,12 @@ const isPrime = (number) => {
 };
 
 const getGameData = () => {
-  const question = randomOfNum(100);
+  const question = randomOfNum(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
 const launchGame = () => {
-  game(description, getGameData);
+  buildGameLogic(description, getGameData);
 };
 export default launchGame;
