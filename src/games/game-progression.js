@@ -12,8 +12,9 @@ const getArithmeticProgression = (firstElement, step, length) => {
 };
 
 const letHideTheElement = (arr, index) => {
-  arr[index] = '..';
-  return arr.join(' ');
+  const copyArr = [...arr];
+  copyArr[index] = '..';
+  return copyArr.join(' ');
 };
 
 const getGameData = () => {
