@@ -11,7 +11,7 @@ const getCalculated = (num1, num2, operator) => {
     case '*':
       return (num1 * num2);
     default:
-      return null;
+      throw new Error('Возникла ошибка.');
   }
 };
 
