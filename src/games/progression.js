@@ -18,11 +18,11 @@ const letHideTheElement = (arr, index) => {
 };
 
 const getGameData = () => {
-  const indexOfHiddenElement = randomOfNum(0, 9);
   const lengthOfProgression = randomOfNum(10, 15);
   const firstElement = randomOfNum(0, 50);
   const step = randomOfNum(1, 10);
   const progression = getArithmeticProgression(firstElement, step, lengthOfProgression);
+  const indexOfHiddenElement = randomOfNum(0, progression.length - 1);
   const correctAnswer = String(progression[indexOfHiddenElement]);
   const question = letHideTheElement(progression, indexOfHiddenElement);
   return [question, correctAnswer];
