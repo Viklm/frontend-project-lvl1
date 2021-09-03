@@ -8,7 +8,7 @@
 1. Для запуска у Вас должен быть установлен Node.js последней версии. (To run, you  should have installed Node.js of the latest version.)
 2. Склонируйте созданный репозиторий на свой компьютер. (Copy the created repository to your computer.)
 3. Выполните установку зависимостей командой "make install". (Install the dependencies with the command "make install".)
-4. Игры готовы к запуску. Запуск игр производится с помощью команд. (The games are ready to launch. Games are launched using commands.)
+4. Игры готовы к запуску. Запуск игр производится с помощью команд. (The games are ready to launch. Games are launched using commands.) 
 
 ### Игры/Games.
 1. Игра: "Проверка на чётность". Команда brain-even. (Game: "Parity Check". Command brain-even.)
